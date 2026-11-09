@@ -13,7 +13,9 @@ Predicting F1 race winners based on circuit conditions using logistic regression
 | Princy Satapathy | 2026EEB1395 | Video Lead | @2026eeb1395 |
 | Ashmita Gupta | 2026MCB1518 | PPT Lead | @AshmitaGupta164 |
 
+
 ## Project Structure
+
 
 ```text
 AI101-team-81/
