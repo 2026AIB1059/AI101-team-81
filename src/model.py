@@ -44,14 +44,16 @@ def circuit_dependence(df: pd.DataFrame, min_races: int = MIN_CIRCUIT_RACES) -> 
                 "pole_podium_rate": pole["podium"].mean() if len(pole) else np.nan,
             }
         )
-    out = pd.DataFrame(rows)
+    columns = ["circuitId", "circuit_name", "races", "dependence_index",
+               "pole_win_rate", "pole_podium_rate"]
+    out = pd.DataFrame(rows, columns=columns)
     return out.sort_values("dependence_index", ascending=False).reset_index(drop=True)
 
 
 def add_circuit_features(df: pd.DataFrame, table: pd.DataFrame) -> pd.DataFrame:
     """Attach the circuit index (learned on TRAIN data only) and the grid interaction."""
     df = df.copy()
-    default = table["dependence_index"].mean()
+    default = table["dependence_index"].mean() if len(table) else 0.0
     index_map = table.set_index("circuitId")["dependence_index"]
     df["circuit_dependence"] = df["circuitId"].map(index_map).fillna(default)
     df["grid_x_circuit"] = df["grid"] * df["circuit_dependence"]
