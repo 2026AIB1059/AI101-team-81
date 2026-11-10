@@ -96,20 +96,20 @@ Run from the repository root, in this order:
 
 ![Expected terminal output](outputs/expected_output.png)
 
-Plots saved in `outputs/`: `TODO: list file names, e.g. confusion_matrix.png`
+Plots saved in `outputs/`: `podium_rate_by_grid.png`, `top_drivers_podiums.png`, `top_constructors_podiums.png`, `grid_dependence_index.png`, `confusion_matrix.png`, `roc_curve.png`, `calibration_curve.png`, `feature_coefficients.png`, `backtest_top3.png`
 
 ---
 
 ## 📊 Results
 
-| Metric | Baseline (grid ≤ 3) | Logistic Regression |
-| :--- | :---: | :---: |
-| Accuracy | `TODO` | `TODO` |
-| Precision | `TODO` | `TODO` |
-| Recall | `TODO` | `TODO` |
-| ROC-AUC | `TODO` | `TODO` |
+| Metric | Baseline (grid <= 3) | Logistic Regression |
+| :--- | :--- | :--- |
+| Accuracy | 0.897 | 0.901 |
+| Precision | 0.657 | 0.720 |
+| Recall | 0.652 | 0.558 |
+| ROC-AUC | 0.911 | 0.928 |
 
-**Key finding:** `TODO: one sentence that matches the numbers above, e.g. which feature has the largest coefficient.` Starting grid position and constructor performance were the strongest predictors of a podium finish.
+**Key finding:** Logistic Regression achieved a higher accuracy (90.1%) and precision (72.0%) than the baseline, with grid position combined with circuit dependence (`grid_x_circuit`) having the strongest negative impact on podium probability.
 
 ---
 
