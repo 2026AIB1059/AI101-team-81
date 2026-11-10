@@ -1,6 +1,8 @@
-# 🏎️ AI101 Mini-Project: F1 Winner Prediction
+# 🏎️ F1 Podium Prediction: "Is the Race Won on Saturday?"
 
-Predicting Formula 1 race winners based on circuit conditions, driver performance, and grid positions using **Logistic Regression**.
+Predicts whether a Formula 1 driver finishes on the podium (top 3) from grid position, team strength, driver experience and circuit attributes, using **Logistic Regression** (pandas, scikit-learn, matplotlib).
+
+![AI101 Mini-Project](https://img.shields.io/badge/AI101-Mini--Project-blue) ![Team 81](https://img.shields.io/badge/Team-81-orange) ![Python](https://img.shields.io/badge/Python-3.10%2B-green)
 
 ---
 
@@ -13,61 +15,126 @@ Predicting Formula 1 race winners based on circuit conditions, driver performanc
 | **Princy Satapathy** | `2026EEB1395` | Video Lead | [@2026eeb1395](https://github.com/2026eeb1395) |
 | **Ashmita Gupta** | `2026MCB1518` | PPT Lead | [@AshmitaGupta164](https://github.com/AshmitaGupta164) |
 
+*All four members contributed code (see commit history).*
+
+---
+
+## 🎯 Problem Statement
+
+Everyone says pole position matters, but how much it matters depends on the circuit. This project asks: **given a driver's starting grid slot, team strength, experience and the circuit, how likely is a podium finish?**
+
+- **Task:** binary classification (podium = finish in top 3, otherwise not)
+- **Model:** Logistic Regression (interpretable coefficients and odds ratios)
+- **Baseline for comparison:** "podium if grid position ≤ 3"
+
+## 📦 Dataset
+
+- **Source:** [Formula 1 World Championship (1950-2024), Kaggle](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020) (compiled from the Ergast database)
+- **Location in repo:** `Formula 1 Dataset/` (14 raw CSV files, included in the repo, so no download is needed)
+- **Tables used:** results, races, drivers, constructors, circuits (joined on their IDs)
+- **Size after cleaning:** `TODO: rows` rows, `TODO: columns` columns, seasons `TODO: start year`-`TODO: end year`
+- **Cleaning notes:** grid position 0 means a pit-lane start in this dataset and is recoded; rows with missing fields are dropped
+
+## 🧠 Approach
+
+```text
+Raw CSVs  ->  Join tables  ->  Feature engineering  ->  Train/test split  ->  Logistic Regression  ->  Metrics + plots
+(14 files)   (results,        (grid, driver           (TODO: describe       (src/model.py)           (outputs/)
+              races,           experience,             your split)
+              drivers, ...)    constructor points,
+                               circuit attributes)
+```
+
+**Features:** starting grid position, driver experience, constructor points, circuit attributes
+**Target:** podium (1 if finishing position is 1, 2 or 3, else 0)
+**Libraries:** pandas, numpy, scikit-learn, matplotlib (exact versions in `requirements.txt`)
+
 ---
 
 ## 📁 Project Structure
 
 ```text
 AI101-team-81/
-├── Formula 1 Dataset/              # 14 Raw F1 CSV Dataset files
-├── outputs/           # Output visualizations and confusion matrix plots
+├── Formula 1 Dataset/   # 14 raw F1 CSV files
+├── outputs/             # Generated plots and expected_output.png
 ├── src/
-│   ├── main.py        # Main execution entry point & data verification
-│   ├── model.py       # ML Model building, training & evaluation
-│   ├── plots.py       # Visualization generation scripts
-│   └── utils.py       # Helper functions and metric formatters
-├── requirements.txt   # Project dependencies
-└── README.md          # Comprehensive project documentation
+│   ├── main.py          # Entry point: loads data, runs pipeline, prints metrics
+│   ├── model.py         # Model building, training and evaluation
+│   ├── plots.py         # Visualisation scripts
+│   └── utils.py         # Helper functions and metric formatters
+├── requirements.txt     # Pinned project dependencies
+└── README.md            # Project documentation
 ```
 
-## ⚙️ How to Setup
+---
 
-### 1. Prerequisites
-Make sure you have Python installed on your system.
+## ⚙️ Setup
 
-### 2. Installation
-Clone the repository and install all required libraries:
+Tested on **Python 3.10 and 3.11** (`TODO: confirm` on Windows / macOS / Ubuntu).
+
 ```bash
 git clone https://github.com/2026AIB1059/AI101-team-81.git
 cd AI101-team-81
+python -m venv venv
+
+# Activate the environment
+source venv/bin/activate        # macOS / Linux
+venv\Scripts\activate           # Windows
+
 pip install -r requirements.txt
 ```
 
 ## 🚀 How to Run
 
-Execute the main entry script from the root folder:
-```bash
-python src/main.py
-```
+Run from the repository root, in this order:
 
+1. `python src/main.py`
+2. The script loads and cleans the data from `Formula 1 Dataset/`, trains the model, prints the evaluation metrics in the terminal and saves the plots in `outputs/`.
+3. Expected runtime: `TODO: e.g. under 30 seconds`.
 
-## 📊 Summary of Results
+### Expected Output
 
-- **Machine Learning Model:** Logistic Regression
-- **Primary Features:** Starting Grid Position, Driver Experience, Constructor Points, Circuit Attributes
-- **Evaluation Metrics:** Classification Accuracy, Precision, Recall, and ROC-AUC
-- **Key Finding:** Starting grid position combined with constructor performance provides the highest weight in predicting podium finishes.
+![Expected terminal output](outputs/expected_output.png)
 
+Plots saved in `outputs/`: `TODO: list file names, e.g. confusion_matrix.png`
+
+---
+
+## 📊 Results
+
+| Metric | Baseline (grid ≤ 3) | Logistic Regression |
+| :--- | :---: | :---: |
+| Accuracy | `TODO` | `TODO` |
+| Precision | `TODO` | `TODO` |
+| Recall | `TODO` | `TODO` |
+| ROC-AUC | `TODO` | `TODO` |
+
+**Key finding:** `TODO: one sentence that matches the numbers above, e.g. which feature has the largest coefficient.` Starting grid position and constructor performance were the strongest predictors of a podium finish.
+
+---
 
 ## 🔗 Project Deliverables
 
-* 📊 **Presentation Slides (PPT):** *[Link coming soon]*
-* 🎥 **Live Demo Video (5 min):** *[Link coming soon]*
+- 📊 **Presentation Slides (5):** `TODO: docs/Team81_slides.pdf` (or public link)
+- 🎥 **Demo Video (max 5 min):** `TODO: unlisted YouTube / Drive link`
+
+---
+
+## 🤝 Contributions
+
+| Member | Contribution |
+| :--- | :--- |
+| Monika Singh | README, project structure and documentation, `TODO` |
+| Naitik Goyal | `requirements.txt`, run steps, fresh-clone testing, `TODO` |
+| Princy Satapathy | Demo video, `TODO` |
+| Ashmita Gupta | 5-slide presentation, `TODO` |
+
+---
 
 ## 🤖 AI-Use Disclosure
 
-* **ChatGPT / Gemini:** Used to assist in structuring documentation, setting up virtual environment instructions, formatting markdown tables, and troubleshooting git commands.
-* **Code Verification:** All machine learning pipeline code, logic, and data paths were reviewed, executed, and tested by the team.
-
-
-
+- **ChatGPT:** `TODO: what for` (e.g. debugging a plotting error in `src/plots.py`); we tested the fix.
+- **Gemini:** `TODO: what for` (e.g. first draft of this README); edited by `TODO: name`.
+- **Claude:** `TODO: remove this line if not used` (e.g. helped plan the problem statement and features); we reviewed and verified the output.
+- **Code verification:** all machine learning pipeline code, logic and data paths were reviewed, executed and tested by the team, and every member can explain it.
+- No AI was used to generate the dataset or the results.
