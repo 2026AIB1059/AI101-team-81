@@ -19,7 +19,7 @@ Predicting Formula 1 race winners based on circuit conditions, driver performanc
 
 ```text
 AI101-team-81/
-├── data/              # 14 Raw F1 CSV Dataset files
+├── Formula 1 Dataset/              # 14 Raw F1 CSV Dataset files
 ├── outputs/           # Output visualizations and confusion matrix plots
 ├── src/
 │   ├── main.py        # Main execution entry point & data verification
