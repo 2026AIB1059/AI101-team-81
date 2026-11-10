@@ -63,3 +63,11 @@ python src/main.py
 
 * 📊 **Presentation Slides (PPT):** *[Link coming soon]*
 * 🎥 **Live Demo Video (5 min):** *[Link coming soon]*
+
+## 🤖 AI-Use Disclosure
+
+* **ChatGPT / Gemini:** Used to assist in structuring documentation, setting up virtual environment instructions, formatting markdown tables, and troubleshooting git commands.
+* **Code Verification:** All machine learning pipeline code, logic, and data paths were reviewed, executed, and tested by the team.
+
+
+
