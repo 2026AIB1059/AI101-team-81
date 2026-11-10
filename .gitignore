@@ -1,1 +1,121 @@
 .DS_Store
+
+# =====================================
+# PYTHON
+# =====================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Python build files
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+
+# =====================================
+# VIRTUAL ENVIRONMENTS
+# =====================================
+
+venv/
+.venv/
+env/
+ENV/
+
+# =====================================
+# JUPYTER NOTEBOOKS
+# =====================================
+
+.ipynb_checkpoints/
+
+# =====================================
+# IDE & EDITOR FILES
+# =====================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# =====================================
+# TESTING & COVERAGE
+# =====================================
+
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# =====================================
+# LOGS & TEMPORARY FILES
+# =====================================
+
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+
+# =====================================
+# ENVIRONMENT VARIABLES & SECRETS
+# =====================================
+
+.env
+.env.*
+!.env.example
+secrets.json
+credentials.json
+*.pem
+*.key
+
+# =====================================
+# MACHINE LEARNING
+# =====================================
+
+# Model checkpoints
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.keras
+*.pt
+*.pth
+*.onnx
+
+# Experiment tracking
+mlruns/
+wandb/
+lightning_logs/
+runs/
+
+# =====================================
+# DATASETS (OPTIONAL)
+# =====================================
+
+# Uncomment if you don't want datasets uploaded
+# data/raw/
+# data/processed/
+
+# =====================================
+# OS GENERATED FILES
+# =====================================
+
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# =====================================
+# OTHER
+# =====================================
+
+.cache/
+.pyre/
+.mypy_cache/
+.ruff_cache/
+.parquet
