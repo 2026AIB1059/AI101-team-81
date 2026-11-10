@@ -1,2 +1,60 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Automatically normalize line endings
+* text=auto
+
+# Python files
+*.py text eol=lf
+
+# Jupyter notebooks
+*.ipynb text eol=lf
+
+# Documentation
+*.md text eol=lf
+*.txt text eol=lf
+
+# Configuration files
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+*.ini text eol=lf
+*.cfg text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+
+# Windows scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Git-related files
+.gitattributes text eol=lf
+.gitignore text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.exe binary
+*.dll binary
+*.mp4 binary
+*.mp3 binary
+
+# Machine learning model files
+*.pkl binary
+*.pickle binary
+*.joblib binary
+*.h5 binary
+*.keras binary
+*.pt binary
+*.pth binary
+*.onnx binary
+
+# CSV datasets
+*.csv text eol=lf
