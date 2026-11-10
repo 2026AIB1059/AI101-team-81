@@ -49,3 +49,17 @@ Execute the main entry script from the root folder:
 ```bash
 python src/main.py
 ```
+
+
+## 📊 Summary of Results
+
+- **Machine Learning Model:** Logistic Regression
+- **Primary Features:** Starting Grid Position, Driver Experience, Constructor Points, Circuit Attributes
+- **Evaluation Metrics:** Classification Accuracy, Precision, Recall, and ROC-AUC
+- **Key Finding:** Starting grid position combined with constructor performance provides the highest weight in predicting podium finishes.
+
+
+## 🔗 Project Deliverables
+
+* 📊 **Presentation Slides (PPT):** *[Link coming soon]*
+* 🎥 **Live Demo Video (5 min):** *[Link coming soon]*
