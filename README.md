@@ -1,28 +1,31 @@
+# 🏎‍🟀 AI101 Mini-Project: F1 Winner Prediction
 
+Predicting Formula 1 race winners based on circuit conditions, driver performance, and grid positions using *Logistic Regression*.
 
-# AI101 Mini-Project: Formula 1 race data to calculate winner depending on grid circuit condition using LOGISTIC regression
+---
 
-Predicting F1 race winners based on circuit conditions using logistic regression.
-
-## Team and Roles
+## 👥 Team and Roles
 
 | Member Name | Entry Number | Role | GitHub Handle |
 | :--- | :--- | :--- | :--- |
-| Monika Singh | 2026AIB1059 | Documentation Lead | @2026AIB1059 |
-| Naitik Goyal | 2026EEB1382 | Execution Lead | @NaitikGo-Yal |
-| Princy Satapathy | 2026EEB1395 | Video Lead | @2026eeb1395 |
-| Ashmita Gupta | 2026MCB1518 | PPT Lead | @AshmitaGupta164 |
+| *Monika Singh* | 2026AIB1059 | Documentation Lead | [@2026AIB1059](https://github.com/2026AIB1059) |
+| *Naitik Goyal* | 2026EEB1382 | Execution Lead | [@NaitikGo-Yal](https://github.com/NaitikGo-Yal) |
+| *Princy Satapathy* | 2026EEB1395 | Video Lead | [@2026eeb1395](https://github.com/2026eeb1395) |
+| *Ashmita Gupta* | 2026MCB1518 | PPT Lead | [@AshmitaGupta164](https://github.com/AshmitaGupta164) |
 
+---
 
-## Project Structure
+## 📁 Project Structure
 
-
-```text
+```
 AI101-team-81/
-├── data/
+├── data/              # 14 Raw F1 CSV Dataset files
+├── outputs/           # Output visualizations and confusion matrix plots
 ├── src/
-│   ├── main.py
-│   └── model.py
-├── outputs/
-├── requirements.txt
-└── README.md
+│   ├── main.py        # Main execution entry point & data verification
+│   ├── model.py       # ML Model building, training & evaluation
+│   ├── plots.py       # Visualization generation scripts
+│   └── utils.py       # Helper functions and metric formatters
+├── requirements.txt   # Project dependencies
+└── README.md          # Comprehensive project documentation
+```
