@@ -1,5 +1,5 @@
 """Automated tests for the F1 Podium Prediction project.
-
+"""Test code author: Naitik Goyal : execution lead"""
 Run from the repository root with either:
     python tests/test_project.py          (formatted report)
     python -m unittest discover -s tests -v
