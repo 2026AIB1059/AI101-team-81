@@ -29,7 +29,7 @@ def main() -> None:
         f"{df['raceId'].nunique()} races, {df['circuitId'].nunique()} circuits"
     )
 
-    # 2. Who finishes in the top three? ------------------------------------
+        # 2. (Who finishes in the top three? ------------------------------------
     section("Most podium finishes of all time (top 3)")
     drivers = mdl.podium_leaders(df, "driver_name", top=10)
     teams = mdl.podium_leaders(df, "constructor_name", top=10)
