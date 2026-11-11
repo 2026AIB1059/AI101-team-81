@@ -95,7 +95,14 @@ Run from the repository root, in this order:
 ### Expected Output
 
 ![Expected terminal output](outputs/roc_curve.png)
-
+![Confusion Matrix](outputs/confusion_matrix.png)
+![Calibration Curve](outputs/calibration_curve.png)
+![Feature Coefficients](outputs/feature_coefficients.png)
+![Backtest Top 3](outputs/backtest_top3.png)
+![Podium Rate by Grid](outputs/podium_rate_by_grid.png)
+![Top Drivers Podiums](outputs/top_drivers_podiums.png)
+![Top Constructors Podiums](outputs/top_constructors_podiums.png)
+![Grid Dependence Index](outputs/grid_dependence_index.png)
 Plots saved in `outputs/`: `podium_rate_by_grid.png`, `top_drivers_podiums.png`, `top_constructors_podiums.png`, `grid_dependence_index.png`, `confusion_matrix.png`, `roc_curve.png`, `calibration_curve.png`, `feature_coefficients.png`, `backtest_top3.png`
 
 ---
