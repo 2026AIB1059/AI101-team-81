@@ -1,5 +1,5 @@
 """Visualisation scripts. All figures are saved in the outputs/ folder."""
-
+""" Author Naitik Goyal : (coding/execution lead)"""
     import matplotlib
 
 matplotlib.use("Agg")  # no display needed, works on any laptop / server
