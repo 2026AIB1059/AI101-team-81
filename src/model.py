@@ -1,5 +1,5 @@
 """Model building, training, evaluation, circuit analysis and the podium back-test."""
-
+"""Author Naitik Goyal (Execution and Modelling/coding lead)"""
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
