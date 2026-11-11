@@ -138,3 +138,4 @@ Plots saved in `outputs/`: `podium_rate_by_grid.png`, `top_drivers_podiums.png`,
 - **Claude:** `TODO: remove this line if not used` (e.g. helped plan the problem statement and features); we reviewed and verified the output.
 - **Code verification:** all machine learning pipeline code, logic and data paths were reviewed, executed and tested by the team, and every member can explain it.
 - No AI was used to generate the dataset or the results.
+
