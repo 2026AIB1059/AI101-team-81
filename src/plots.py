@@ -1,6 +1,6 @@
 """Visualisation scripts. All figures are saved in the outputs/ folder."""
 
-import matplotlib
+    import matplotlib
 
 matplotlib.use("Agg")  # no display needed, works on any laptop / server
 import matplotlib.pyplot as plt
@@ -107,3 +107,4 @@ def backtest_plot(backtest: pd.DataFrame) -> None:
     ax.set_title("Back-test: predicting the top three")
     ax.legend()
     _save(fig, "backtest_top3.png")
+
