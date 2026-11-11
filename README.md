@@ -132,7 +132,7 @@ Plots saved in `outputs/`: `podium_rate_by_grid.png`, `top_drivers_podiums.png`,
 | Member | Contribution |
 | :--- | :--- |
 | Monika Singh | README, project structure and documentation, `TODO` |
-| Naitik Goyal | `requirements.txt`, run steps, fresh-clone testing, `TODO` |
+| Naitik Goyal | `requirements.txt`, model.py, main.py, utils.py, plots.py, programming/ executing code, AI modelling, fresh-clone testing, `TODO` |
 | Princy Satapathy | Demo video, `TODO` |
 | Ashmita Gupta | 5-slide presentation, `TODO` |
 
