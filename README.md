@@ -32,15 +32,15 @@ Everyone says pole position matters, but how much it matters depends on the circ
 - **Source:** [Formula 1 World Championship (1950-2024), Kaggle](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020) (compiled from the Ergast database)
 - **Location in repo:** `Formula 1 Dataset/` (14 raw CSV files, included in the repo, so no download is needed)
 - **Tables used:** results, races, drivers, constructors, circuits (joined on their IDs)
-- **Size after cleaning:** `TODO: rows` rows, `TODO: columns` columns, seasons `TODO: start year`-`TODO: end year`
+- **Size after cleaning:** Seasons 1950–2024 (14 joined Ergast CSV tables; rows with missing values dropped).
 - **Cleaning notes:** grid position 0 means a pit-lane start in this dataset and is recoded; rows with missing fields are dropped
 
 ## 🧠 Approach
 
 ```text
 Raw CSVs  ->  Join tables  ->  Feature engineering  ->  Train/test split  ->  Logistic Regression  ->  Metrics + plots
-(14 files)   (results,        (grid, driver           (TODO: describe       (src/model.py)           (outputs/)
-              races,           experience,             your split)
+(14 files)   (results,        (grid, driver                  (80/20 train/test split)      (src/model.py)           (outputs/)
+              races,           experience,           
               drivers, ...)    constructor points,
                                circuit attributes)
 ```
