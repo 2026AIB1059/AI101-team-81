@@ -61,7 +61,7 @@ def add_circuit_features(df: pd.DataFrame, table: pd.DataFrame) -> pd.DataFrame:
 
 
 # ---------------------------------------------------------------------------
-# Logistic Regression
+        # Logistic Regression
 # ---------------------------------------------------------------------------
 def build_model():
     """Scaled Logistic Regression (scaling makes coefficients comparable)."""
@@ -115,7 +115,7 @@ def coefficient_table(model) -> pd.DataFrame:
 
 
 # ---------------------------------------------------------------------------
-# Who finishes in the top three? Leaders and back-test
+        # Who finishes in the top three? Leaders and back-test
 # ---------------------------------------------------------------------------
 def podium_leaders(df: pd.DataFrame, by: str, top: int = 10) -> pd.Series:
     """All-time podium counts by 'driver_name' or 'constructor_name'."""
