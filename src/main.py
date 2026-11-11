@@ -1,7 +1,8 @@
 """F1 Podium Prediction: main entry point.
-
+"""Author Naitik Goyal : Execution lead : AI modelling
 Run from the repository root:
     python src/main.py
+
 """
 
 import time
