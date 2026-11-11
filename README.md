@@ -94,7 +94,7 @@ Run from the repository root, in this order:
 
 ### Expected Output
 
-![Expected terminal output](outputs/roc_curve.png)
+![Expected terminal output](outputs/expected_output.png)
 
 Plots saved in `outputs/`: `podium_rate_by_grid.png`, `top_drivers_podiums.png`, `top_constructors_podiums.png`, `grid_dependence_index.png`, `confusion_matrix.png`, `roc_curve.png`, `calibration_curve.png`, `feature_coefficients.png`, `backtest_top3.png`
 
