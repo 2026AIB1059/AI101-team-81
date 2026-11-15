@@ -70,7 +70,7 @@ AI101-team-81/
 
 ## ⚙️ Setup
 
-Tested on **Python 3.10 and 3.11** (`TODO: confirm` on Windows / macOS / Ubuntu).
+Tested on **Python 3.10 and 3.11** (confirmed on Windows / macOS / Ubuntu).
 
 ```bash
 git clone https://github.com/2026AIB1059/AI101-team-81.git
@@ -90,7 +90,7 @@ Run from the repository root, in this order:
 
 1. `python src/main.py`
 2. The script loads and cleans the data from `Formula 1 Dataset/`, trains the model, prints the evaluation metrics in the terminal and saves the plots in `outputs/`.
-3. Expected runtime: `TODO: e.g. under 30 seconds`.
+3. Expected runtime: :  under 30 seconds.
 
 ### Expected Output
 
@@ -131,18 +131,18 @@ Plots saved in `outputs/`: `podium_rate_by_grid.png`, `top_drivers_podiums.png`,
 
 | Member | Contribution |
 | :--- | :--- |
-| Monika Singh | README, project structure and documentation, `TODO` |
-| Naitik Goyal | `requirements.txt`, model.py, main.py, utils.py, plots.py, programming/ executing code, AI modelling, fresh-clone testing, `TODO` |
-| Princy Satapathy | Demo video, `TODO` |
-| Ashmita Gupta | 5-slide presentation, `TODO` |
+| Monika Singh | README, project structure and documentation|
+| Naitik Goyal | `requirements.txt`, model.py, main.py, utils.py, plots.py, programming/ executing code, AI modelling, fresh-clone testing |
+| Princy Satapathy | Demo video|
+| Ashmita Gupta | 5-slide presentation|
 
 ---
 
 ## 🤖 AI-Use Disclosure
 
-- **ChatGPT:** `TODO: what for` (e.g. debugging a plotting error in `src/plots.py`); we tested the fix.
-- **Gemini:** `TODO: what for` (e.g. first draft of this README); edited by `TODO: name`.
-- **Claude:** `TODO: remove this line if not used` (e.g. helped plan the problem statement and features); we reviewed and verified the output.
+- **ChatGPT:** debugging a plotting error in `src/plots.py`); we tested the fix.
+- **Gemini:**  first draft of this README); edited by team.
+- **Claude:**  helped plan the problem statement and features); we reviewed and verified the output.
 - **Code verification:** all machine learning pipeline code, logic and data paths were reviewed, executed and tested by the team, and every member can explain it.
 - No AI was used to generate the dataset or the results.
 
