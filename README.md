@@ -122,7 +122,7 @@ Plots saved in `outputs/`: `podium_rate_by_grid.png`, `top_drivers_podiums.png`,
 
 ## 🔗 Project Deliverables
 
-- 📊 **Presentation Slides (5):** https://drive.google.com/file/d/1De4XOpkW8uzKB1gUaD360E1WxkfyaM-h/view?usp=sharing
+- 📊 **Presentation Slides (5):** https://drive.google.com/file/d/1v0Mr4Zl2k6O34SQGi1pHFoeEO1yq-E0z/view?usp=drive_link
 - 🎥 **Demo Video (max 5 min):** `TODO: unlisted YouTube / Drive link`
 
 ---
