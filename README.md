@@ -122,9 +122,8 @@ Plots saved in `outputs/`: `podium_rate_by_grid.png`, `top_drivers_podiums.png`,
 
 ## 🔗 Project Deliverables
 
-- 📊 **Presentation Slides (5):** https://drive.google.com/file/d/1v0Mr4Zl2k6O34SQGi1pHFoeEO1yq-E0z/view?usp=drive_link
-  https://drive.google.com/file/d/1QLW94KEyDRm5ek53jRBiZtsMOLiVVePs/view?usp=sharing
-https://drive.google.com/file/d/1QLW94KEyDRm5ek53jRBiZtsMOLiVVePs/view?usp=sharing 
+- 📊 **Presentation Slides (5):** https://drive.google.com/file/d/1U4n2C5lJwMiX-Kju5X4M9hpT0fnZVP5E/view?usp=sharing
+**Video**:https://drive.google.com/file/d/1QLW94KEyDRm5ek53jRBiZtsMOLiVVePs/view?usp=sharing 
 ---
 
 ## 🤝 Contributions
