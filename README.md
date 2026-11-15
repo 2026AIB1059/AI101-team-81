@@ -39,7 +39,7 @@ Everyone says pole position matters, but how much it matters depends on the circ
 
 ```text
 Raw CSVs  ->  Join tables  ->  Feature engineering  ->  Train/test split  ->  Logistic Regression  ->  Metrics + plots
-(14 files)   (results,        (grid, driver                  (80/20 train/test split)      (src/model.py)           (outputs/)
+(14 files)   (results,        (grid, driver                  (season based/train/val/test)      (src/model.py)           (outputs/)
               races,           experience,           
               drivers, ...)    constructor points,
                                circuit attributes)
@@ -140,9 +140,9 @@ Plots saved in `outputs/`: `podium_rate_by_grid.png`, `top_drivers_podiums.png`,
 
 ## 🤖 AI-Use Disclosure
 
-- **ChatGPT:** debugging a plotting error in `src/plots.py`); we tested the fix.
+- **ChatGPT:** debugging a plotting error in `src/plots.py`; we tested the fix.
 - **Gemini:**  first draft of this README); edited by team.
-- **Claude:**  helped plan the problem statement and features); we reviewed and verified the output.
+- **Claude:**  helped plan the problem statement and features; we reviewed and verified the output.
 - **Code verification:** all machine learning pipeline code, logic and data paths were reviewed, executed and tested by the team, and every member can explain it.
 - No AI was used to generate the dataset or the results.
 
